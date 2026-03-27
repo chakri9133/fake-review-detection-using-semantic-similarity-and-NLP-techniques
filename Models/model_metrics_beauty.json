@@ -1,0 +1,9 @@
+{
+    "dataset": "beauty",
+    "precision_fake": 0.5881488736532811,
+    "recall_fake": 0.9016516516516516,
+    "f1_fake": 0.7119146413752223,
+    "support_fake": 1332.0,
+    "accuracy": 0.8756397134083931,
+    "dataset_size": 39080
+}

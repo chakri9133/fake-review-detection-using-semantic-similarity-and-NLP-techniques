@@ -1,0 +1,27 @@
+{
+    "BoW + Naive Bayes": {
+        "accuracy": 0.86,
+        "precision_fake": 0.85,
+        "recall_fake": 0.89,
+        "f1_fake": 0.87
+    },
+    "TF-IDF + Naive Bayes": {
+        "accuracy": 0.88,
+        "precision_fake": 0.96,
+        "recall_fake": 0.28,
+        "f1_fake": 0.44
+    },
+    "GRU (from-scratch embeddings)": {
+        "accuracy": 0.85,
+        "precision_fake": 0.8218,
+        "recall_fake": 0.8029,
+        "f1_fake": 0.8323
+    },
+    "SBERT + Logistic Regression": {
+    "accuracy": 0.89,
+    "precision_fake": 0.88,
+    "recall_fake": 0.90,
+    "f1_fake": 0.89
+    }
+
+}

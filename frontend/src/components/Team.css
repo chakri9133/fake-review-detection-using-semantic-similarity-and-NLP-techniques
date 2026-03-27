@@ -1,0 +1,109 @@
+.team {
+  padding: 3rem 0;
+  background-color: white;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.guide-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.guide-section h3 {
+  color: #007bff;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.guide-card {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.guide-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.guide-title {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.member {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #007bff;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.member h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.member p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+  .team {
+    padding: 2rem 0;
+  }
+
+  .team h2 {
+    font-size: 1.5rem;
+  }
+
+  .guide-card {
+    padding: 1.5rem;
+  }
+
+  .guide-name {
+    font-size: 1.1rem;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .member {
+    padding: 1.5rem 1rem;
+  }
+}

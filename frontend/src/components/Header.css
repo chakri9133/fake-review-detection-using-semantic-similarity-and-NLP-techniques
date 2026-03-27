@@ -1,0 +1,193 @@
+.header {
+  background-color: white;
+  color: #333;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 2rem 1rem;
+  border-radius: 8px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.problem-statement {
+  background-color: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.problem-statement h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.problem-statement p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  color: #555;
+}
+
+.problem-statement p:last-child {
+  margin-bottom: 0;
+}
+
+.objectives {
+  background-color: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.objectives h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.objectives ul {
+  list-style-position: outside;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.objectives li {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #555;
+}
+
+.objectives li:last-child {
+  margin-bottom: 0;
+}
+
+.methodology {
+  background-color: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.methodology h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.methodology > p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.methodology-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.methodology-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.methodology-section h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.methodology-section h4 {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.methodology-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 0.8rem;
+}
+
+.methodology-section ul {
+  list-style-position: outside;
+  padding-left: 2rem;
+  margin: 0.8rem 0;
+}
+
+.methodology-section li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .problem-statement {
+    text-align: left;
+    padding: 1.5rem;
+  }
+  
+  .problem-statement h2 {
+    font-size: 1.4rem;
+  }
+  
+  .problem-statement p {
+    font-size: 0.95rem;
+  }
+}

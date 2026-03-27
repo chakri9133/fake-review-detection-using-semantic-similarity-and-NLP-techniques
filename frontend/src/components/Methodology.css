@@ -1,0 +1,545 @@
+.methodology-visual {
+  padding: 3rem 0;
+  background-color: #f8f9fa;
+}
+
+.methodology-visual .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.methodology-visual h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.methodology-visual .subtitle {
+  text-align: left;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+}
+
+.methodology-visual h3 {
+  font-size: 1.3rem;
+  color: #007bff;
+  margin: 2rem 0 1.5rem 0;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* ==================== PIPELINE SECTION ==================== */
+.pipeline-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 150px;
+}
+
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 120px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pipeline-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.pipeline-step.active {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(102, 126, 234, 0.4);
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  white-space: pre-wrap;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.pipeline-arrow {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ==================== FEATURES SECTION ==================== */
+.features-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-left: 5px solid #667eea;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-left-color: #764ba2;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ==================== MODELS SECTION ==================== */
+.models-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.model-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 6px solid #667eea;
+  position: relative;
+}
+
+.model-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-top-color: #764ba2;
+}
+
+.model-card.final-model {
+  background: linear-gradient(135deg, #fff5e1 0%, #fffbf0 100%);
+  border-top-color: #FFD93D;
+  box-shadow: 0 8px 20px rgba(255, 217, 61, 0.2);
+}
+
+.model-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.model-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.model-strength {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.final-badge {
+  display: inline-block;
+  background: #FFD93D;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* ==================== SIMILARITY SECTION ==================== */
+.similarity-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.similarity-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.review-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.similarity-connection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.similarity-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+}
+
+.similarity-line::before,
+.similarity-line::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.similarity-line::before {
+  left: -8px;
+  border-top: 6px solid #667eea;
+}
+
+.similarity-line::after {
+  right: -8px;
+  border-top: 6px solid #764ba2;
+}
+
+.similarity-label {
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.similarity-insight {
+  font-weight: 600;
+  color: #e74c3c;
+  font-size: 1rem;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.similarity-caption {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* ==================== METRICS SECTION ==================== */
+.metrics-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.metric-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.metric-badge:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.metric-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-badge p {
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ==================== DEPLOYMENT SECTION ==================== */
+.deployment-section {
+  background: white;
+  border-left: 5px solid #007bff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.deployment-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.deployment-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.deployment-box:hover {
+  transform: scale(1.05);
+}
+
+.deployment-box.highlight {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  min-width: 180px;
+}
+
+.deployment-box.result {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  min-width: 160px;
+}
+
+.deployment-box p {
+  margin: 0;
+}
+
+.deployment-box p:first-child {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.deployment-box p.small {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.deployment-arrow {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  .methodology-visual h2 {
+    font-size: 2rem;
+  }
+
+  .methodology-visual h3 {
+    font-size: 1.5rem;
+  }
+
+  .pipeline {
+    gap: 0.5rem;
+  }
+
+  .pipeline-step {
+    min-width: 80px;
+    height: 100px;
+    font-size: 0.8rem;
+  }
+
+  .step-icon {
+    font-size: 1.5rem;
+  }
+
+  .features-grid,
+  .models-grid,
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .similarity-diagram {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .similarity-line {
+    width: 3px;
+    height: 40px;
+    transform: rotate(90deg);
+  }
+
+  .similarity-insight {
+    margin-left: 0;
+  }
+
+  .deployment-flow {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .tooltip {
+    bottom: -60px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .methodology-visual .container {
+    padding: 0 1rem;
+  }
+
+  .pipeline-section,
+  .features-section,
+  .models-section,
+  .similarity-section,
+  .metrics-section,
+  .deployment-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .methodology-visual h2 {
+    font-size: 1.5rem;
+  }
+
+  .methodology-visual h3 {
+    font-size: 1.2rem;
+  }
+
+  .features-grid,
+  .models-grid,
+  .metrics-grid {
+    gap: 1rem;
+  }
+
+  .pipeline-step {
+    min-width: 70px;
+    height: 90px;
+    font-size: 0.7rem;
+  }
+}
